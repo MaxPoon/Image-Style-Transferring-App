@@ -10,7 +10,7 @@ def resize_and_save_image(image_name):
 
 
 src_dir = input("Source directory: ")
-if not src_dir.endswith('/')
+if not src_dir.endswith('/'):
     src_dir += '/'
 target_size = (224, 224)
 images = listdir(src_dir)
